@@ -36,7 +36,7 @@ public class SoccerServiceImpl implements SoccerService {
 	
 	public void addGermanyTeamPLayer(String name, String position, int number) {
 		Team germany=teamRepository.findByPlayers(1l); 
-		
+		System.out.println("heres"); 
 		Player player=new Player();
 		player.setName(name);
 		player.setNum(number); 
